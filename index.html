@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>EPIC — Predicate-Guided Text-to-Image Generation</title>
+  <meta name="description" content="EPIC is a training-free framework for compositional text-to-image generation. Parse a prompt once, verify visual requirements, and guide resampling or targeted editing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mtablo.github.io/EPIC_page/">
+  <meta property="og:title" content="EPIC: Efficient Predicate-Guided Inference-Time Control">
+  <meta property="og:description" content="A fixed visual program. Candidate-specific verification. More efficient compositional text-to-image generation.">
+  <meta property="og:image" content="https://mtablo.github.io/EPIC_page/assets/social-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://mtablo.github.io/EPIC_page/assets/social-card.jpg">
+  <meta name="author" content="Sunung Mun, Sunghyun Cho, Jungseul Ok">
+  <link rel="canonical" href="https://mtablo.github.io/EPIC_page/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preload" as="image" href="assets/examples/rabbits/epic.webp">
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="EPIC home"><span class="brand-mark" aria-hidden="true">E</span> EPIC</a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#results">Results</a>
+        <a href="#examples">Examples</a>
+        <a class="nav-paper" href="https://arxiv.org/abs/2605.11722" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="paper-title">
+      <p class="eyebrow">COMPOSITIONAL TEXT-TO-IMAGE GENERATION</p>
+      <h1 id="paper-title" aria-label="EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation"><span class="hero-name">EPIC</span><span class="hero-title">Efficient Predicate-Guided Inference-Time Control<br class="desktop-break"> for Compositional Text-to-Image Generation</span></h1>
+      <p class="conference-badge">Accepted at <strong>NeurIPS 2026</strong></p>
+      <p class="authors"><a href="https://mtablo.github.io/" target="_blank" rel="noopener noreferrer">Sunung Mun<sup>1</sup></a><span aria-hidden="true">·</span><a href="https://scho.postech.ac.kr/" target="_blank" rel="noopener noreferrer">Sunghyun Cho<sup>1,2</sup></a><span aria-hidden="true">·</span><a href="https://sites.google.com/view/jungseulok" target="_blank" rel="noopener noreferrer">Jungseul Ok<sup>1,2</sup></a></p>
+      <div class="affiliations" aria-label="Author affiliations">
+        <p class="affiliation"><sup>1</sup> Graduate School of Artificial Intelligence, POSTECH</p>
+        <p class="affiliation"><sup>2</sup> Department of Computer Science and Engineering, POSTECH</p>
+      </div>
+      <div class="resource-links">
+        <a class="button button-primary" href="https://arxiv.org/abs/2605.11722" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>
+          Read the paper <span aria-hidden="true">↗</span>
+        </a>
+        <a class="button button-secondary" role="link" aria-disabled="true" data-code-link>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></svg>
+          Code <span class="soon-tag" data-code-status>Coming soon</span>
+        </a>
+      </div>
+      <p class="hero-lead">Parse once. Verify each candidate. Refine what fails.</p>
+
+      <div class="hero-gallery" aria-label="Selected images generated with EPIC">
+        <figure class="hero-example">
+          <button class="image-trigger" type="button" data-example="rabbits" data-method="epic" aria-label="Enlarge EPIC result: six rabbits on a wooden suitcase">
+            <img src="assets/examples/rabbits/epic.webp" width="1024" height="1024" alt="Six rabbits sitting on top of a wooden suitcase in a field." fetchpriority="high">
+            <span class="zoom-cue" aria-hidden="true">↗</span>
+          </button>
+          <figcaption><span class="image-category">COUNTS &amp; MATERIALS</span>Six rabbits on a wooden suitcase</figcaption>
+        </figure>
+        <figure class="hero-example">
+          <button class="image-trigger" type="button" data-example="monkeys" data-method="epic" aria-label="Enlarge EPIC result: red monkeys, glass donuts and a metal dog">
+            <img src="assets/examples/monkeys/epic.webp" width="512" height="512" alt="Five red monkeys and five glass donuts to the left of a metal dog.">
+            <span class="zoom-cue" aria-hidden="true">↗</span>
+          </button>
+          <figcaption><span class="image-category">ATTRIBUTE BINDING</span>Red monkeys, glass donuts, a metal dog</figcaption>
+        </figure>
+        <figure class="hero-example">
+          <button class="image-trigger" type="button" data-example="layout" data-method="epic" aria-label="Enlarge EPIC result: a yellow car, a purple bicycle and five checkered chairs">
+            <img src="assets/examples/layout/epic.webp" width="1024" height="1024" alt="A yellow car to the left of a purple bicycle, with five checkered chairs behind them.">
+            <span class="zoom-cue" aria-hidden="true">↗</span>
+          </button>
+          <figcaption><span class="image-category">SPATIAL RELATIONS</span>A yellow car, a purple bicycle, five chairs</figcaption>
+        </figure>
+      </div>
+      <p class="hero-caption">Selected EPIC outputs. All images are actual results from our experiments.</p>
+    </section>
+
+    <section class="section overview container" id="overview" aria-labelledby="overview-title">
+      <div class="section-heading">
+        <p class="eyebrow">THE IDEA</p>
+        <h2 id="overview-title">Keep the requirements fixed.<br>Let the image improve.</h2>
+      </div>
+      <div class="abstract-copy">
+        <p>Compositional prompts ask an image to satisfy several requirements at once: the right objects, the right number of instances, the right attributes, and the right relationships.</p>
+        <p><strong>EPIC makes those requirements explicit.</strong> It compiles the original prompt into a fixed visual program of typed predicates. Each candidate is checked against that same program using visual evidence. The remaining failures guide either targeted editing or resampling, turning verification into a control signal for refinement.</p>
+        <p>The framework uses pretrained components and requires no controller or generator training.</p>
+      </div>
+      <div class="method-steps">
+        <div class="method-step"><span class="step-number">01</span><h3>Parse</h3><p>Compile the original prompt once into objects and checkable visual predicates.</p></div>
+        <div class="method-step"><span class="step-number">02</span><h3>Verify</h3><p>Recompute predicate states from the visual evidence in every candidate.</p></div>
+        <div class="method-step"><span class="step-number">03</span><h3>Refine</h3><p>Route local failures to editing and broader failures to fresh generation.</p></div>
+      </div>
+      <figure class="framework-figure">
+        <a href="assets/figures/method.webp" target="_blank" rel="noopener" aria-label="Open the complete EPIC framework diagram">
+          <img src="assets/figures/method.webp" width="2200" height="1049" alt="EPIC framework: a prompt is parsed into a fixed visual program; a predicate verifier and refinement policy guide generation or editing until acceptance or budget exhaustion." loading="lazy">
+        </a>
+        <figcaption>The EPIC refinement loop. Candidates passing the verification gate are accepted; at budget exhaustion, the best partial candidate is returned.</figcaption>
+      </figure>
+    </section>
+
+    <section class="results-section section" id="results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">QUANTITATIVE RESULTS</p>
+          <h2 id="results-title">Stronger composition.<br>More efficient refinement.</h2>
+          <p>On GenEval2, EPIC improves alignment while using fewer image-model executions and MLLM resources than RAISE.</p>
+        </div>
+        <div class="key-results">
+          <div><p class="stat-value">71.46<span>GM</span></p><p class="stat-label">Prompt-level alignment</p><p class="stat-detail">34.16 for single-pass generation</p></div>
+          <div><p class="stat-value">31<span>%</span></p><p class="stat-label">Fewer image-model executions</p><p class="stat-detail">13.6 vs. 19.8 per prompt, compared with RAISE</p></div>
+          <div><p class="stat-value">81<span>%</span></p><p class="stat-label">Fewer MLLM tokens</p><p class="stat-detail">9.2k vs. 49.4k per prompt, compared with RAISE</p></div>
+        </div>
+
+        <div class="chart-panel">
+          <div class="chart-heading"><div><h3 id="chart-title">Prompt-level alignment</h3><p id="chart-description">Soft-TIFA GM (0–100). Higher is better.</p></div>
+            <div class="metric-switch" role="group" aria-label="Choose a result metric">
+              <button type="button" data-metric="gm" aria-pressed="true">Alignment</button>
+              <button type="button" data-metric="executions" aria-pressed="false">Image calls</button>
+              <button type="button" data-metric="tokens" aria-pressed="false">MLLM tokens</button>
+            </div>
+          </div>
+          <div id="result-chart" class="result-chart" role="img" aria-label="GenEval2 Soft-TIFA GM: FLUX.2-Klein-9B 34.16, BoN+NVILA 41.60, T2I-Copilot 36.56, RAISE 52.23, EPIC 71.46.">
+            <div class="bar-row"><span class="bar-label">FLUX.2-Klein-9B</span><span class="bar-track"><span class="bar" style="--bar-width:34.16%"></span></span><span class="bar-value">34.16</span></div>
+            <div class="bar-row"><span class="bar-label">BoN+NVILA</span><span class="bar-track"><span class="bar" style="--bar-width:41.60%"></span></span><span class="bar-value">41.60</span></div>
+            <div class="bar-row"><span class="bar-label">T2I-Copilot</span><span class="bar-track"><span class="bar" style="--bar-width:36.56%"></span></span><span class="bar-value">36.56</span></div>
+            <div class="bar-row"><span class="bar-label">RAISE</span><span class="bar-track"><span class="bar" style="--bar-width:52.23%"></span></span><span class="bar-value">52.23</span></div>
+            <div class="bar-row bar-row--ours"><span class="bar-label">EPIC <span>Ours</span></span><span class="bar-track"><span class="bar" style="--bar-width:71.46%"></span></span><span class="bar-value">71.46</span></div>
+          </div>
+          <div class="chart-axis" aria-hidden="true"><span>0</span><span id="chart-max">100</span></div>
+        </div>
+
+        <div class="table-scroll" tabindex="0" role="region" aria-label="GenEval2 results table; scroll horizontally on small screens">
+          <table class="results-table">
+            <caption>GenEval2 results with FLUX.2-Klein-9B</caption>
+            <thead><tr><th scope="col">Method</th><th scope="col">GM <span>↑</span></th><th scope="col">AM <span>↑</span></th><th scope="col">Image calls <span>↓</span></th><th scope="col">MLLM calls <span>↓</span></th><th scope="col">MLLM tokens (k) <span>↓</span></th></tr></thead>
+            <tbody>
+              <tr><th scope="row">FLUX.2-Klein-9B</th><td>34.16</td><td>79.06</td><td>1.00</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row">BoN+NVILA</th><td>41.60</td><td>82.38</td><td>32.0</td><td>—</td><td>—</td></tr>
+              <tr><th scope="row">T2I-Copilot</th><td>36.56</td><td>81.19</td><td>1.24</td><td>4.48</td><td>15.2</td></tr>
+              <tr><th scope="row">RAISE</th><td>52.23</td><td>86.28</td><td>19.8</td><td>9.12</td><td>49.4</td></tr>
+              <tr class="ours-row"><th scope="row">EPIC <span class="ours-tag">Ours</span></th><td><strong>71.46</strong></td><td><strong>90.25</strong></td><td>13.6</td><td>2.53</td><td>9.2</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="results-note">800 prompts · Maximum budget of 32 image-model executions · Deterministic MLLM decoding (<i>T</i> = 0). GM and AM are Soft-TIFA scores on a 0–100 scale. Costs are realized averages per prompt; “—” denotes an unreported value.</p>
+        <details class="atomicity-panel" id="atomicity-results" hidden>
+          <summary><span>Alignment across prompt complexity</span><span class="atomicity-summary-detail">Atomicity 3–10</span></summary>
+          <div class="atomicity-content">
+            <p>Atomicity is the number of primitive visual requirements in a prompt.</p>
+            <div class="atomicity-legend" id="atomicity-legend" aria-label="Compared methods"></div>
+            <div class="atomicity-chart" id="atomicity-chart"></div>
+            <p class="atomicity-source">GenEval2 · Soft-TIFA GM (0–100), higher is better. <a id="atomicity-source" href="https://arxiv.org/abs/2605.11722" target="_blank" rel="noopener noreferrer">Paper</a></p>
+          </div>
+        </details>
+        <p class="scope-note">EPIC targets explicit compositional requirements. Performance and visual-quality trade-offs vary across benchmarks; see the paper for additional evaluations and limitations.</p>
+      </div>
+    </section>
+
+    <section class="section examples-section container" id="examples" aria-labelledby="examples-title">
+      <div class="section-heading">
+        <p class="eyebrow">QUALITATIVE COMPARISONS</p>
+        <h2 id="examples-title">Better compositional alignment with EPIC.</h2>
+      </div>
+      <div class="example-control">
+        <label for="example-select">Choose an example</label>
+        <select id="example-select">
+            <option value="monkeys">Red monkeys &amp; glass donuts</option>
+            <option value="rabbits">Rabbits on a wooden suitcase</option>
+            <option value="motorcycles">Stone motorcycles &amp; green rabbits</option>
+            <option value="bicycle">A bicycle, a rabbit &amp; brown turtles</option>
+            <option value="violins">White violins &amp; sparkling horses</option>
+            <option value="layout">A car, a bicycle &amp; checkered chairs</option>
+            <option value="cars">Five cars on the street</option>
+            <option value="chickens-bees">Four chickens &amp; two bees</option>
+            <option value="monkeys-umbrellas">Four monkeys &amp; five purple umbrellas</option>
+            <option value="trucks">Two trucks unloading cargo</option>
+        </select>
+        <div class="example-navigation"><button type="button" id="example-prev" aria-label="Previous example">←</button><span id="example-count">1 / 10</span><button type="button" id="example-next" aria-label="Next example">→</button></div>
+      </div>
+      <div class="prompt-panel" aria-live="polite" aria-atomic="true">
+        <span class="prompt-label">PROMPT</span>
+        <p id="example-prompt">“five red monkeys, and five glass donuts to the left of a metal dog”</p>
+      </div>
+      <div class="comparison-grid" id="comparison-grid" role="group" aria-label="EPIC and four comparison methods for the same prompt">
+          <figure class="method-card method-card--ours"><figcaption>EPIC <span>(Ours)</span></figcaption><button class="image-trigger" type="button" data-method="epic" aria-label="Enlarge EPIC (Ours) result"><img src="assets/examples/monkeys/epic.webp" alt="EPIC (Ours) result for the red monkeys and glass donuts prompt." width="512" height="512" loading="lazy"><span class="zoom-cue" aria-hidden="true">↗</span></button></figure>
+        <div class="comparison-baselines">
+          <figure class="method-card"><figcaption>FLUX.2-Klein-9B</figcaption><button class="image-trigger" type="button" data-method="flux" aria-label="Enlarge FLUX.2-Klein-9B result"><img src="assets/examples/monkeys/flux.webp" alt="FLUX.2-Klein-9B result for the red monkeys and glass donuts prompt." width="512" height="512" loading="lazy"><span class="zoom-cue" aria-hidden="true">↗</span></button></figure>
+          <figure class="method-card"><figcaption>BoN+NVILA</figcaption><button class="image-trigger" type="button" data-method="bon" aria-label="Enlarge BoN+NVILA result"><img src="assets/examples/monkeys/bon.webp" alt="BoN+NVILA result for the red monkeys and glass donuts prompt." width="512" height="512" loading="lazy"><span class="zoom-cue" aria-hidden="true">↗</span></button></figure>
+          <figure class="method-card"><figcaption>T2I-Copilot</figcaption><button class="image-trigger" type="button" data-method="copilot" aria-label="Enlarge T2I-Copilot result"><img src="assets/examples/monkeys/copilot.webp" alt="T2I-Copilot result for the red monkeys and glass donuts prompt." width="512" height="512" loading="lazy"><span class="zoom-cue" aria-hidden="true">↗</span></button></figure>
+          <figure class="method-card"><figcaption>RAISE</figcaption><button class="image-trigger" type="button" data-method="raise" aria-label="Enlarge RAISE result"><img src="assets/examples/monkeys/raise.webp" alt="RAISE result for the red monkeys and glass donuts prompt." width="512" height="512" loading="lazy"><span class="zoom-cue" aria-hidden="true">↗</span></button></figure>
+        </div>
+      </div>
+      <p class="comparison-note">Selected comparisons using the same prompt and FLUX.2-Klein-9B backbone.</p>
+      <noscript><p class="noscript-note">Enable JavaScript to switch examples, compare metrics, and enlarge images. The default comparison and full results table are available above.</p></noscript>
+    </section>
+
+    <section class="section citation-section" id="citation" aria-labelledby="citation-title">
+      <div class="container citation-container">
+        <div class="section-heading"><p class="eyebrow">CITE THIS WORK</p><h2 id="citation-title">BibTeX</h2><p>If you find this work useful, please consider citing our paper.</p></div>
+        <div class="citation-block"><button class="copy-button" type="button" id="copy-bibtex">Copy BibTeX <span aria-hidden="true">⧉</span></button><pre><code id="bibtex">@article{mun2026epic,
+  title   = {EPIC: Efficient Predicate-Guided Inference-Time Control
+             for Compositional Text-to-Image Generation},
+  author  = {Mun, Sunung and Cho, Sunghyun and Ok, Jungseul},
+  journal = {arXiv preprint arXiv:2605.11722},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2605.11722}
+}</code></pre></div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-top"><a class="wordmark" href="#top">EPIC</a><p><a href="https://mtablo.github.io/" target="_blank" rel="noopener noreferrer">Sunung Mun</a> · <a href="https://scho.postech.ac.kr/" target="_blank" rel="noopener noreferrer">Sunghyun Cho</a> · <a href="https://sites.google.com/view/jungseulok" target="_blank" rel="noopener noreferrer">Jungseul Ok</a><br>POSTECH · 2026</p><div><a href="https://arxiv.org/abs/2605.11722" target="_blank" rel="noopener noreferrer">Paper ↗</a><a href="mailto:jungseul@postech.ac.kr">Contact ↗</a></div></div>
+  </footer>
+
+  <dialog id="image-lightbox" aria-labelledby="lightbox-title" aria-describedby="lightbox-prompt">
+    <div class="lightbox-toolbar"><div><span class="lightbox-eyebrow">IMAGE COMPARISON</span><h2 id="lightbox-title">EPIC</h2></div><button type="button" class="lightbox-close" aria-label="Close image viewer">✕</button></div>
+    <div class="lightbox-image-wrap"><img id="lightbox-image" alt="" width="1024" height="1024"></div>
+    <div class="lightbox-bottom"><button type="button" id="lightbox-prev" aria-label="Show previous method">←</button><p id="lightbox-prompt"></p><button type="button" id="lightbox-next" aria-label="Show next method">→</button></div>
+    <p class="lightbox-help"><span id="lightbox-count">1 / 5</span><span>← → Compare methods &nbsp; · &nbsp; Esc to close</span></p>
+  </dialog>
+</body>
+</html>

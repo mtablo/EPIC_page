@@ -1,0 +1,357 @@
+[
+  {
+    "file": "assets/examples/monkeys/flux.webp",
+    "source": "figures/assets/qualitative_512/atom09_00614_five_red_monkeys_and_five_glass_donuts_to_the_left_of_a_metal_dog/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "155adc38eae9d753b041ee2392eed04912ffec3f51f7b5db29e051585ed24368"
+  },
+  {
+    "file": "assets/examples/monkeys/bon.webp",
+    "source": "figures/assets/qualitative_512/atom09_00614_five_red_monkeys_and_five_glass_donuts_to_the_left_of_a_metal_dog/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "49ff4b4c8121b39555336644dd45878bd456335667134631886fa5cdd819157f"
+  },
+  {
+    "file": "assets/examples/monkeys/copilot.webp",
+    "source": "figures/assets/qualitative_512/atom09_00614_five_red_monkeys_and_five_glass_donuts_to_the_left_of_a_metal_dog/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "11837c1911edad4c5f79bf1362b9251966b9eaf41b3ba0c93f8cc579a02da62d"
+  },
+  {
+    "file": "assets/examples/monkeys/raise.webp",
+    "source": "figures/assets/qualitative_512/atom09_00614_five_red_monkeys_and_five_glass_donuts_to_the_left_of_a_metal_dog/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "f01f58b3c963ead21eae2984085bfcdc96a96fa57ea7d6ce8a0c97f10a7b4e44"
+  },
+  {
+    "file": "assets/examples/monkeys/epic.webp",
+    "source": "figures/assets/qualitative_512/atom09_00614_five_red_monkeys_and_five_glass_donuts_to_the_left_of_a_metal_dog/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "ecff0bcc75a20e952c94d0ba2ce18977e35036fc78f5ef62595147f1cd67a956"
+  },
+  {
+    "file": "assets/examples/rabbits/flux.webp",
+    "source": "figures/assets/qualitative_more/atom05_00216_six_rabbits_on_top_of_a_wooden_suitcase/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "91f19fc97f624d83c66c3f79c6f1dd2f75e966adfcdca650360fe1cbfc572a8c"
+  },
+  {
+    "file": "assets/examples/rabbits/bon.webp",
+    "source": "figures/assets/qualitative_more/atom05_00216_six_rabbits_on_top_of_a_wooden_suitcase/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "4f202ed235cae33719ca13f3f903bbf7ebdec5b744089665c80cd061198ce899"
+  },
+  {
+    "file": "assets/examples/rabbits/copilot.webp",
+    "source": "figures/assets/qualitative_more/atom05_00216_six_rabbits_on_top_of_a_wooden_suitcase/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "43054a79cf13579a445e4142339a1cfb8c6784968134c3df908364775a2ebebf"
+  },
+  {
+    "file": "assets/examples/rabbits/raise.webp",
+    "source": "figures/assets/qualitative_more/atom05_00216_six_rabbits_on_top_of_a_wooden_suitcase/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "7f39836fb23d303a0597406860568593536cff5fad6dd44914aacb0471c9617d"
+  },
+  {
+    "file": "assets/examples/rabbits/epic.webp",
+    "source": "figures/assets/qualitative_more/atom05_00216_six_rabbits_on_top_of_a_wooden_suitcase/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "a74d9904ef8ddd5f679886fd9fd4d652cba38b13d14cc31f24b86c2f1f728c69"
+  },
+  {
+    "file": "assets/examples/motorcycles/flux.webp",
+    "source": "figures/assets/qualitative_512/atom10_00764_two_stone_motorcycles_behind_six_green_rabbits_behind_a_black_violin/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "f0d36b5a7ad9d7e7c6361d66e864a28237f67254d4b73c6dc5920f03cceddc5f"
+  },
+  {
+    "file": "assets/examples/motorcycles/bon.webp",
+    "source": "figures/assets/qualitative_512/atom10_00764_two_stone_motorcycles_behind_six_green_rabbits_behind_a_black_violin/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "5bca9cd0b6207b0464e271cdd40e6bf807673b7c37118d0f361d2fc7eec2b481"
+  },
+  {
+    "file": "assets/examples/motorcycles/copilot.webp",
+    "source": "figures/assets/qualitative_512/atom10_00764_two_stone_motorcycles_behind_six_green_rabbits_behind_a_black_violin/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "77bbae7f6400b721672bbc4b94900ef3daa57760efa3b07fc4bc1139d14f8399"
+  },
+  {
+    "file": "assets/examples/motorcycles/raise.webp",
+    "source": "figures/assets/qualitative_512/atom10_00764_two_stone_motorcycles_behind_six_green_rabbits_behind_a_black_violin/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "ff8b93bfe0a60da0c9706ed29b60542900a63e0b2a8535737863f6bcbf569575"
+  },
+  {
+    "file": "assets/examples/motorcycles/epic.webp",
+    "source": "figures/assets/qualitative_512/atom10_00764_two_stone_motorcycles_behind_six_green_rabbits_behind_a_black_violin/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "c12ab7bb769a7de3003933a12e3d7323d4910770a55e5d8498017b39d27b41f4"
+  },
+  {
+    "file": "assets/examples/bicycle/flux.webp",
+    "source": "figures/assets/qualitative_512/atom06_00389_a_bicycle_to_the_left_of_a_rabbit_and_five_brown_turtles/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "c9cdb7e301a5672f29787208a848554a36c4932b1169f487b3d3dda438cd22be"
+  },
+  {
+    "file": "assets/examples/bicycle/bon.webp",
+    "source": "figures/assets/qualitative_512/atom06_00389_a_bicycle_to_the_left_of_a_rabbit_and_five_brown_turtles/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "355c5ab64767e121cc1b4c05a6c5f8adcc982e3e8b48d281f45a95c3e9ebaf63"
+  },
+  {
+    "file": "assets/examples/bicycle/copilot.webp",
+    "source": "figures/assets/qualitative_512/atom06_00389_a_bicycle_to_the_left_of_a_rabbit_and_five_brown_turtles/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "d1d4b374b71f3c3334dd39d67c27dec6dc5ec0d55deec3e9d45c065eca73d840"
+  },
+  {
+    "file": "assets/examples/bicycle/raise.webp",
+    "source": "figures/assets/qualitative_512/atom06_00389_a_bicycle_to_the_left_of_a_rabbit_and_five_brown_turtles/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "d1da2a8eb03c2eeba11381fcc2356ba3ad0b6bac73b8263ee8f6bd0bd0e403c9"
+  },
+  {
+    "file": "assets/examples/bicycle/epic.webp",
+    "source": "figures/assets/qualitative_512/atom06_00389_a_bicycle_to_the_left_of_a_rabbit_and_five_brown_turtles/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "46c7a586983dd64afeaba89e9f8102b822e22b82d590f48f94a4550e4318611b"
+  },
+  {
+    "file": "assets/examples/violins/flux.webp",
+    "source": "figures/assets/qualitative_more/atom06_00363_three_white_violins_and_three_sparkling_horses/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "44d33c51b5ecb4575f83243942e96b71f326743528a356998c7a2a48a49339a7"
+  },
+  {
+    "file": "assets/examples/violins/bon.webp",
+    "source": "figures/assets/qualitative_more/atom06_00363_three_white_violins_and_three_sparkling_horses/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "ebf2d557c89e6b5588c714d829ae679e6a92187b9f77c66598e03b630c2e936d"
+  },
+  {
+    "file": "assets/examples/violins/copilot.webp",
+    "source": "figures/assets/qualitative_more/atom06_00363_three_white_violins_and_three_sparkling_horses/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "a333b67744cfa44ab4345115367b2fbe0abeb67c5906df87678d1d132bee550d"
+  },
+  {
+    "file": "assets/examples/violins/raise.webp",
+    "source": "figures/assets/qualitative_more/atom06_00363_three_white_violins_and_three_sparkling_horses/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "03cc214262a4a3da857f042c93c0e9f06b29adc76d584b061d8562a6f6594046"
+  },
+  {
+    "file": "assets/examples/violins/epic.webp",
+    "source": "figures/assets/qualitative_more/atom06_00363_three_white_violins_and_three_sparkling_horses/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "8ea3137d48cf78a6599ff7ef7e1d65ae7e2dfaab4af8f86879311a961128d41d"
+  },
+  {
+    "file": "assets/examples/layout/flux.webp",
+    "source": "figures/assets/qualitative_more/atom09_00660_a_yellow_car_to_the_left_of_a_purple_bicycle_in_front_of_five_checkered_chairs/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "8cec16fa80b7036152c01c39aa24a133006c4f483f644625c70716aad6b87a0b"
+  },
+  {
+    "file": "assets/examples/layout/bon.webp",
+    "source": "figures/assets/qualitative_more/atom09_00660_a_yellow_car_to_the_left_of_a_purple_bicycle_in_front_of_five_checkered_chairs/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "d1b60b3b486c45f480a9a90e8615949207b553d56b8bde65dbc50de8fb5bf0b7"
+  },
+  {
+    "file": "assets/examples/layout/copilot.webp",
+    "source": "figures/assets/qualitative_more/atom09_00660_a_yellow_car_to_the_left_of_a_purple_bicycle_in_front_of_five_checkered_chairs/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "578ae563f508a6c1cb57dbeeac8a8d8ce1336edfd73dd6f9a57337d37b864151"
+  },
+  {
+    "file": "assets/examples/layout/raise.webp",
+    "source": "figures/assets/qualitative_more/atom09_00660_a_yellow_car_to_the_left_of_a_purple_bicycle_in_front_of_five_checkered_chairs/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "067fe6950dfbecd27572b0a339fc66625565c3137955336e7b62b413fe20063d"
+  },
+  {
+    "file": "assets/examples/layout/epic.webp",
+    "source": "figures/assets/qualitative_more/atom09_00660_a_yellow_car_to_the_left_of_a_purple_bicycle_in_front_of_five_checkered_chairs/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "c92e100403436201a8ca8b02185329e9748310c2c438295be5d27738eafa6db2"
+  },
+  {
+    "file": "assets/examples/cars/flux.webp",
+    "source": "figures/assets/qualitative_more/drawbench_five_cars/flux9b.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "21158ef9eb146e71bede29411bd41791e81c5677341b93ee448056738da3c1b4"
+  },
+  {
+    "file": "assets/examples/cars/bon.webp",
+    "source": "figures/assets/qualitative_more/drawbench_five_cars/bon.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "21158ef9eb146e71bede29411bd41791e81c5677341b93ee448056738da3c1b4"
+  },
+  {
+    "file": "assets/examples/cars/copilot.webp",
+    "source": "figures/assets/qualitative_more/drawbench_five_cars/t2i.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "a57cb5d35c0a55b6579e8a2f9ab0674096cab6ea76f07a65e60ced3226424006"
+  },
+  {
+    "file": "assets/examples/cars/raise.webp",
+    "source": "figures/assets/qualitative_more/drawbench_five_cars/raise.jpg",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "2f82a6b10fe6b6ee421f02153084a3d7d6b8ebf52d1757e61d2f24034e320ad4"
+  },
+  {
+    "file": "assets/examples/cars/epic.webp",
+    "source": "figures/assets/qualitative_more/drawbench_five_cars/ours.jpg",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "46bbf3faf42adf5fc2ad03ec40cf373474864a8f65b663263d7db88912e607f9"
+  },
+  {
+    "file": "assets/figures/method.webp",
+    "source": "figures/assets/method/method.pdf",
+    "conversion": "Poppler render to 2200px PNG, then WebP quality96"
+  },
+  {
+    "file": "assets/examples/chickens-bees/flux.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000113/vanilla.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "15db2531fcb3708f89ce3308d8078da6182b2c46197dbd98d672f856a3a3fcf9"
+  },
+  {
+    "file": "assets/examples/chickens-bees/bon.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000113/bon_budget32.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "585d28bf5ad56fc824b2ee6a86835571488929f50b06647b0d901170b1013a1d"
+  },
+  {
+    "file": "assets/examples/chickens-bees/copilot.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000113/t2i_copilot_t0.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "0d2aaf0e84ba511e387c5117dde0d401475a7fc274a39635ebc0991a602a1625"
+  },
+  {
+    "file": "assets/examples/chickens-bees/raise.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000113/RAISE.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "47d373c7c5eb3c9f44f5fe07b664ca85e2172440a1f1da02136ab1e12855091f"
+  },
+  {
+    "file": "assets/examples/chickens-bees/epic.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000113/EPIC.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "f269a2a7c560f54183bf6182da7dca6bf0c439fb510dbef7b6caa658b1e893e2"
+  },
+  {
+    "file": "assets/examples/trucks/flux.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000082/vanilla.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "2b99d600ce8c0ca940ffa1168bd44de19018b2868e239d8e311312f4a1ff7f21"
+  },
+  {
+    "file": "assets/examples/trucks/bon.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000082/bon_budget32.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "d5fd45bf6a8707b87c01a34aa2c1b7600215c947a63fbec5c3c80ba745e21c4b"
+  },
+  {
+    "file": "assets/examples/trucks/copilot.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000082/t2i_copilot_t0.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "15441ba2a9f0dc81f2ad753b2a14377c89a98b6eb7512f1900ce36364a9cd4cf"
+  },
+  {
+    "file": "assets/examples/trucks/raise.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000082/RAISE.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "9a34ec80e81163ab6406c848cadc736571818d3034cfa022bd21fd0dab93e009"
+  },
+  {
+    "file": "assets/examples/trucks/epic.webp",
+    "source": "t2i_compbenchpp_epic_top10_cases/numeracy_000082/EPIC.png",
+    "width": 1024,
+    "height": 1024,
+    "source_sha256": "ef20da0585520d5ae32a8167c4fff85d2a077e503abda6e3158e04f09130987c"
+  },
+  {
+    "file": "assets/examples/monkeys-umbrellas/flux.webp",
+    "source": "figures/assets/qualitative_more/atom09_00673_four_monkeys_in_front_of_a_plastic_flower_to_the_left_of_five_purple_umbrellas/flux2_klein_9b.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "9e68920fd7fde09461693be5c01f9b3074884136873e5298cb58d3471e74c8c9"
+  },
+  {
+    "file": "assets/examples/monkeys-umbrellas/bon.webp",
+    "source": "figures/assets/qualitative_more/atom09_00673_four_monkeys_in_front_of_a_plastic_flower_to_the_left_of_five_purple_umbrellas/bon_noise_scale.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "683130339976104f0de327c4496ec5afa4f15f49100915f3a284a2d9ab25d513"
+  },
+  {
+    "file": "assets/examples/monkeys-umbrellas/copilot.webp",
+    "source": "figures/assets/qualitative_more/atom09_00673_four_monkeys_in_front_of_a_plastic_flower_to_the_left_of_five_purple_umbrellas/t2i_copilot_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "3b7b2f782451930c538844b4e63a9dc90df188b48710c3063dfde214246ce3b5"
+  },
+  {
+    "file": "assets/examples/monkeys-umbrellas/raise.webp",
+    "source": "figures/assets/qualitative_more/atom09_00673_four_monkeys_in_front_of_a_plastic_flower_to_the_left_of_five_purple_umbrellas/raise_token_r4_t0.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "7564d6b33d3189e85b96d6d36d1168c6e3f956944a79ad68c9c130865b4152d6"
+  },
+  {
+    "file": "assets/examples/monkeys-umbrellas/epic.webp",
+    "source": "figures/assets/qualitative_more/atom09_00673_four_monkeys_in_front_of_a_plastic_flower_to_the_left_of_five_purple_umbrellas/ours.png",
+    "width": 512,
+    "height": 512,
+    "source_sha256": "26bccdb072db655383514f39cb7a300cc44ed6329917f8721d6e54325c933b70"
+  }
+]
