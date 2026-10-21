@@ -4,20 +4,87 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <title>EPIC — Predicate-Guided Text-to-Image Generation</title>
-  <meta name="description" content="EPIC is a training-free framework for compositional text-to-image generation. Parse a prompt once, verify visual requirements, and guide resampling or targeted editing.">
+  <title>EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation | NeurIPS 2026</title>
+  <meta name="description" content="EPIC (NeurIPS 2026) improves compositional text-to-image generation with training-free predicate verification, targeted editing, and resampling.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mtablo.github.io/EPIC_page/">
-  <meta property="og:title" content="EPIC: Efficient Predicate-Guided Inference-Time Control">
-  <meta property="og:description" content="A fixed visual program. Candidate-specific verification. More efficient compositional text-to-image generation.">
+  <meta property="og:title" content="EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation | NeurIPS 2026">
+  <meta property="og:description" content="EPIC (NeurIPS 2026) improves compositional text-to-image generation with training-free predicate verification, targeted editing, and resampling.">
   <meta property="og:image" content="https://mtablo.github.io/EPIC_page/assets/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="EPIC project preview for compositional text-to-image generation.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation | NeurIPS 2026">
+  <meta name="twitter:description" content="EPIC (NeurIPS 2026) improves compositional text-to-image generation with training-free predicate verification, targeted editing, and resampling.">
   <meta name="twitter:image" content="https://mtablo.github.io/EPIC_page/assets/social-card.jpg">
+  <meta name="twitter:image:alt" content="EPIC project preview for compositional text-to-image generation.">
   <meta name="author" content="Sunung Mun, Sunghyun Cho, Jungseul Ok">
+  <meta name="citation_title" content="EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation">
+  <meta name="citation_author" content="Mun, Sunung">
+  <meta name="citation_author" content="Cho, Sunghyun">
+  <meta name="citation_author" content="Ok, Jungseul">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Advances in Neural Information Processing Systems">
   <link rel="canonical" href="https://mtablo.github.io/EPIC_page/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="preload" as="image" href="assets/examples/rabbits/epic.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://mtablo.github.io/EPIC_page/",
+    "url": "https://mtablo.github.io/EPIC_page/",
+    "name": "EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation | NeurIPS 2026",
+    "description": "EPIC (NeurIPS 2026) improves compositional text-to-image generation with training-free predicate verification, targeted editing, and resampling.",
+    "inLanguage": "en",
+    "mainEntity": {
+      "@type": "ScholarlyArticle",
+      "@id": "https://mtablo.github.io/EPIC_page/#paper",
+      "name": "EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation",
+      "headline": "EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation",
+      "url": "https://arxiv.org/abs/2605.11722",
+      "mainEntityOfPage": {"@id": "https://mtablo.github.io/EPIC_page/"},
+      "identifier": "arXiv:2605.11722",
+      "creativeWorkStatus": "Accepted at NeurIPS 2026",
+      "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Advances in Neural Information Processing Systems"
+      },
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Sunung Mun",
+          "url": "https://mtablo.github.io/",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Graduate School of Artificial Intelligence, POSTECH"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Sunghyun Cho",
+          "url": "https://scho.postech.ac.kr/",
+          "affiliation": [
+            {"@type": "Organization", "name": "Graduate School of Artificial Intelligence, POSTECH"},
+            {"@type": "Organization", "name": "Department of Computer Science and Engineering, POSTECH"}
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Jungseul Ok",
+          "url": "https://sites.google.com/view/jungseulok",
+          "affiliation": [
+            {"@type": "Organization", "name": "Graduate School of Artificial Intelligence, POSTECH"},
+            {"@type": "Organization", "name": "Department of Computer Science and Engineering, POSTECH"}
+          ]
+        }
+      ]
+    }
+  }
+  </script>
   <script defer src="assets/data.js"></script>
   <script defer src="assets/main.js"></script>
 </head>
@@ -38,7 +105,7 @@
   <main id="top">
     <section class="hero container" aria-labelledby="paper-title">
       <p class="eyebrow">COMPOSITIONAL TEXT-TO-IMAGE GENERATION</p>
-      <h1 id="paper-title" aria-label="EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation"><span class="hero-name">EPIC</span><span class="hero-title">Efficient Predicate-Guided Inference-Time Control<br class="desktop-break"> for Compositional Text-to-Image Generation</span></h1>
+      <h1 id="paper-title" aria-label="EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation"><span class="hero-name">EPIC</span> <span class="hero-title">Efficient Predicate-Guided Inference-Time Control<br class="desktop-break"> for Compositional Text-to-Image Generation</span></h1>
       <p class="conference-badge">Accepted at <strong>NeurIPS 2026</strong></p>
       <p class="authors"><a href="https://mtablo.github.io/" target="_blank" rel="noopener noreferrer">Sunung Mun<sup>1</sup></a><span aria-hidden="true">·</span><a href="https://scho.postech.ac.kr/" target="_blank" rel="noopener noreferrer">Sunghyun Cho<sup>1,2</sup></a><span aria-hidden="true">·</span><a href="https://sites.google.com/view/jungseulok" target="_blank" rel="noopener noreferrer">Jungseul Ok<sup>1,2</sup></a></p>
       <div class="affiliations" aria-label="Author affiliations">
