@@ -73,7 +73,7 @@
   });
 
   const metrics = {
-    gm: { title: 'Prompt-level alignment', description: 'Soft-TIFA GM (0–100). Higher is better.', format: value => value.toFixed(2) },
+    gm: { title: 'Prompt-level accuracy', description: 'Prompt-level accuracy (%). Higher is better.', format: value => value.toFixed(2) },
     executions: { title: 'Realized image-model executions', description: 'Generator and editor calls per prompt. Lower is better.', format: value => Number(value.toFixed(2)).toString() },
     tokens: { title: 'MLLM token usage', description: 'Input + output tokens per prompt, in thousands. Lower is better; “—” means unreported.', format: value => `${value.toFixed(1)}k` }
   };
@@ -125,9 +125,9 @@
       const left = 38, right = 16, top = 32, bottom = 42;
       const x = index => left + index / (atomicity.levels.length - 1) * (width - left - right);
       const y = score => top + (100 - score) / 100 * (height - top - bottom);
-      const svg = svgNode('svg', { viewBox: `0 0 ${width} ${height}`, width, height, role: 'img', 'aria-label': 'GenEval2 Soft-TIFA GM by prompt atomicity, comparing EPIC with four baselines.' });
+      const svg = svgNode('svg', { viewBox: `0 0 ${width} ${height}`, width, height, role: 'img', 'aria-label': 'GenEval2 prompt-level accuracy by prompt atomicity, comparing EPIC with four baselines.' });
       svg.append(svgNode('desc', {}, data.methods.map(method => `${method.name}: ${atomicity.levels.map((level, index) => `atomicity ${level}, ${atomicity.scores[method.id][index].toFixed(2)}`).join('; ')}`).join('. ')));
-      svg.append(svgNode('text', { x: left, y: 16, fill: '#647184', 'font-size': 13 }, 'Soft-TIFA GM ↑'));
+      svg.append(svgNode('text', { x: left, y: 16, fill: '#647184', 'font-size': 13 }, 'Prompt-level accuracy (%) ↑'));
       [0, 25, 50, 75, 100].forEach(score => {
         svg.append(svgNode('line', { x1: left, y1: y(score), x2: width - right, y2: y(score), stroke: '#e5e8ed' }));
         svg.append(svgNode('text', { x: left - 9, y: y(score) + 4, 'text-anchor': 'end', fill: '#697587', 'font-size': 13 }, score));

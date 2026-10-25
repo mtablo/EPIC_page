@@ -30,9 +30,9 @@ window.EPIC_DATA = {
     { id: 'violins', benchmark: 'GenEval2', atomicity: 6, prompt: 'three white violins and three sparkling horses' },
     { id: 'layout', benchmark: 'GenEval2', atomicity: 9, prompt: 'a yellow car to the left of a purple bicycle in front of five checkered chairs' },
     { id: 'cars', benchmark: 'DrawBench', atomicity: null, prompt: 'Five cars on the street.' },
-    // T2I-CompBench++: method names follow the corrected source manifest.
-    { id: 'chickens-bees', benchmark: 'T2I-CompBench++', atomicity: null, prompt: 'four chickens and two bees', methodNames: { bon: 'BoN-32' } },
+    // All comparisons use the BoN+NVILA baseline, as confirmed by the author.
+    { id: 'chickens-bees', benchmark: 'T2I-CompBench++', atomicity: null, prompt: 'four chickens and two bees' },
     { id: 'monkeys-umbrellas', benchmark: 'GenEval2', atomicity: 9, prompt: 'four monkeys in front of a plastic flower to the left of five purple umbrellas' },
-    { id: 'trucks', benchmark: 'T2I-CompBench++', atomicity: null, prompt: 'two trucks unloaded their cargo', methodNames: { bon: 'BoN-32' } }
+    { id: 'trucks', benchmark: 'T2I-CompBench++', atomicity: null, prompt: 'two trucks unloaded their cargo' }
   ]
 };

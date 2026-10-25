@@ -181,20 +181,20 @@
           <p>On GenEval2, EPIC improves alignment while using fewer image-model executions and MLLM resources than RAISE.</p>
         </div>
         <div class="key-results">
-          <div><p class="stat-value">71.46<span>GM</span></p><p class="stat-label">Prompt-level alignment</p><p class="stat-detail">34.16 for single-pass generation</p></div>
+          <div><p class="stat-value">71.46<span>%</span></p><p class="stat-label">Prompt-level accuracy</p><p class="stat-detail">34.16 for single-pass generation</p></div>
           <div><p class="stat-value">31<span>%</span></p><p class="stat-label">Fewer image-model executions</p><p class="stat-detail">13.6 vs. 19.8 per prompt, compared with RAISE</p></div>
           <div><p class="stat-value">81<span>%</span></p><p class="stat-label">Fewer MLLM tokens</p><p class="stat-detail">9.2k vs. 49.4k per prompt, compared with RAISE</p></div>
         </div>
 
         <div class="chart-panel">
-          <div class="chart-heading"><div><h3 id="chart-title">Prompt-level alignment</h3><p id="chart-description">Soft-TIFA GM (0–100). Higher is better.</p></div>
+          <div class="chart-heading"><div><h3 id="chart-title">Prompt-level accuracy</h3><p id="chart-description">Prompt-level accuracy (%). Higher is better.</p></div>
             <div class="metric-switch" role="group" aria-label="Choose a result metric">
               <button type="button" data-metric="gm" aria-pressed="true">Alignment</button>
               <button type="button" data-metric="executions" aria-pressed="false">Image calls</button>
               <button type="button" data-metric="tokens" aria-pressed="false">MLLM tokens</button>
             </div>
           </div>
-          <div id="result-chart" class="result-chart" role="img" aria-label="GenEval2 Soft-TIFA GM: FLUX.2-Klein-9B 34.16, BoN+NVILA 41.60, T2I-Copilot 36.56, RAISE 52.23, EPIC 71.46.">
+          <div id="result-chart" class="result-chart" role="img" aria-label="GenEval2 prompt-level accuracy: FLUX.2-Klein-9B 34.16, BoN+NVILA 41.60, T2I-Copilot 36.56, RAISE 52.23, EPIC 71.46.">
             <div class="bar-row"><span class="bar-label">FLUX.2-Klein-9B</span><span class="bar-track"><span class="bar" style="--bar-width:34.16%"></span></span><span class="bar-value">34.16</span></div>
             <div class="bar-row"><span class="bar-label">BoN+NVILA</span><span class="bar-track"><span class="bar" style="--bar-width:41.60%"></span></span><span class="bar-value">41.60</span></div>
             <div class="bar-row"><span class="bar-label">T2I-Copilot</span><span class="bar-track"><span class="bar" style="--bar-width:36.56%"></span></span><span class="bar-value">36.56</span></div>
@@ -217,14 +217,14 @@
             </tbody>
           </table>
         </div>
-        <p class="results-note">800 prompts · Maximum budget of 32 image-model executions · Deterministic MLLM decoding (<i>T</i> = 0). GM and AM are Soft-TIFA scores on a 0–100 scale. Costs are realized averages per prompt; “—” denotes an unreported value.</p>
+        <p class="results-note">800 prompts · Maximum budget of 32 image-model executions · Deterministic MLLM decoding (<i>T</i> = 0). Prompt-level and atom-level accuracy are estimated with Soft-TIFA GM and AM, respectively, on a 0–100 scale. Costs are realized averages per prompt; “—” denotes an unreported value.</p>
         <details class="atomicity-panel" id="atomicity-results" hidden>
           <summary><span>Alignment across prompt complexity</span><span class="atomicity-summary-detail">Atomicity 3–10</span></summary>
           <div class="atomicity-content">
             <p>Atomicity is the number of primitive visual requirements in a prompt.</p>
             <div class="atomicity-legend" id="atomicity-legend" aria-label="Compared methods"></div>
             <div class="atomicity-chart" id="atomicity-chart"></div>
-            <p class="atomicity-source">GenEval2 · Soft-TIFA GM (0–100), higher is better. <a id="atomicity-source" href="https://arxiv.org/abs/2605.11722" target="_blank" rel="noopener noreferrer">Paper</a></p>
+            <p class="atomicity-source">GenEval2 · Prompt-level accuracy (%), higher is better. <a id="atomicity-source" href="https://arxiv.org/abs/2605.11722" target="_blank" rel="noopener noreferrer">Paper</a></p>
           </div>
         </details>
         <p class="scope-note">EPIC targets explicit compositional requirements. Performance and visual-quality trade-offs vary across benchmarks; see the paper for additional evaluations and limitations.</p>
