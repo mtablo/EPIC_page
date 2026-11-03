@@ -57,7 +57,8 @@ button svg,.button svg{width:18px;height:18px;fill:none;stroke:currentColor;stro
 .image-trigger{display:block;position:relative;isolation:isolate;width:100%;padding:0;border:0;background:#f1f2f4;color:var(--ink)}
 .image-trigger img{width:100%;aspect-ratio:1;object-fit:contain;transition:filter .2s}
 .image-trigger:hover img{filter:brightness(.97)}
-.zoom-cue{position:absolute;right:10px;bottom:10px;display:grid;place-items:center;width:26px;height:26px;color:#303946;background:rgba(255,255,255,.9);border-radius:50%;font-size:18px;opacity:0;transform:translateY(3px);transition:opacity .15s,transform .15s}
+.zoom-cue{position:absolute;right:10px;bottom:10px;display:grid;place-items:center;width:26px;height:26px;color:#303946;background:rgba(255,255,255,.9);border-radius:50%;line-height:1;opacity:0;transform:translateY(3px);transition:opacity .15s,transform .15s}
+.zoom-cue svg{display:block;width:18px;height:18px}
 .image-trigger:hover .zoom-cue,.image-trigger:focus-visible .zoom-cue{opacity:1;transform:none}
 .hero-example figcaption{font-size:15px;line-height:1.6;padding:12px 2px 0;color:#646c79}
 .image-category{display:block;color:#343e4c;font-size:12px;font-weight:700;letter-spacing:.1em;margin-bottom:4px}
@@ -210,7 +211,7 @@ dialog::backdrop{background:rgba(17,24,36,.72);backdrop-filter:blur(4px)}
   .hero-example:last-child{grid-column:1/-1;width:calc(50% - 7px);justify-self:center}
   .hero-example figcaption{font-size:14px;padding-top:10px;line-height:1.55}.image-category{font-size:12px;letter-spacing:.065em;line-height:1.5;margin-bottom:5px}
   .hero-caption{font-size:13px;max-width:320px;margin:22px auto 0;line-height:1.7}
-  .hero-example .image-trigger{border-radius:8px}.zoom-cue{opacity:1;transform:none;right:8px;bottom:8px;width:26px;height:26px;font-size:15px}
+  .hero-example .image-trigger{border-radius:8px}.zoom-cue{opacity:1;transform:none;right:8px;bottom:8px;width:26px;height:26px}.zoom-cue svg{width:16px;height:16px}
   .section{padding-top:62px;padding-bottom:62px}.section-heading h2{font-size:32px;line-height:1.25;margin-top:13px}
   .section-heading>p:last-child:not(.eyebrow){font-size:17px;line-height:1.8;margin-top:18px}
   .abstract-copy{font-size:17px;line-height:1.85;margin-top:24px}
