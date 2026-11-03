@@ -1,6 +1,6 @@
 /* Main-result values: tables/geneval2/geneval2_main.tex. Missing values stay null. */
 window.EPIC_DATA = {
-  codeUrl: null, // Replace with the public repository URL when ready.
+  codeUrl: 'https://github.com/ml-postech/EPIC',
   // Baselines: tables/geneval2/geneval2_atomicity.tex.
   // EPIC: author-confirmed appendix row in geneval2_ablation_atomicity.tex.
   // This row averages to 71.46 and matches the revised Figure 3a.
